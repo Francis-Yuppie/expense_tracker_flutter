@@ -13,6 +13,9 @@ class HomeScreen extends StatelessWidget {
       bottomNavigationBar: ClipRRect(
         borderRadius: const BorderRadius.vertical(top: Radius.circular(30)),
         child: BottomNavigationBar(
+          onTap: (value) {
+            print(value);
+          },
             backgroundColor: Colors.white,
             showSelectedLabels: false,
             showUnselectedLabels: false,
